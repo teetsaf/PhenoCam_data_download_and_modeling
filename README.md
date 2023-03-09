@@ -16,11 +16,14 @@ Before the models will run, you first need to declare the shared variables that 
 1.) Add these two lines to pnet_model.h:
 
 double CDDTot;		// total chilling degree days // AFT
+
 double Tsum;		// secondary GDD calculation // AFT
 
 2.) Add these lines to set the initial values of the new shared variables to 0 in pnet_init_vars
 
 share->GDDTot=0; //AFT
+
 share->CDDTot=0; //AFT
+
 share->Tsum=0; //AFT
 
